@@ -1,0 +1,41 @@
+body {
+  background-color: orange;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile,
+.tablet,
+.pc {
+  margin: auto;
+  font-size: 100px;
+  color: #fff;
+  display: none;
+}
+
+/* Mobile: max-width <= 740px */
+/* 739px = 46.1875em */
+@media only screen and (max-width: 46.1875em) {
+  .mobile {
+    display: block;
+  }
+}
+
+/* Tablet: min-width >= 740px and max-width < 1024 */
+/* 740px = 46.25em */
+/* 1023px = 63.9375em */
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+  .tablet {
+    display: block;
+  }
+}
+
+/* PC: min-width: >= 1024px */
+/* 1024px = 64em */
+@media only screen and (min-width: 64em) {
+  .pc {
+    display: block;
+  }
+}
