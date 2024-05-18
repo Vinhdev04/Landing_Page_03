@@ -299,6 +299,10 @@
           </nav>
 
           <div class="header-with-search">
+            <!-- Search mobile -->
+            <label for="mobile-search-checkbox" class="header__mobile-search">
+              <i class=" header-mobile-search-icon fa-solid fa-magnifying-glass"></i>
+            </label>
             <!-- Logo -->
             <div class="header__logo hide-on-tablet">
               <a href="/" alt="Home" class="header__logo-link">
@@ -310,6 +314,7 @@
               </a>
             </div>
 
+            <input type="checkbox" hidden name="" id="mobile-search-checkbox" class="header__search-checkbox">
             <!-- Search -->
             <div class="header__search">
               <div class="header__search-input-wrap">
@@ -614,6 +619,20 @@
             </div>
           </div>
         </div>
+        <ul class="header__sort-bar">
+          <li class="header__sort-item">
+            <a href="" class="header__sort-link">Liên quan</a>
+          </li>
+          <li class="header__sort-item header__sort-link--active">
+            <a href="" class="header__sort-link ">Mới nhất</a>
+          </li>
+          <li class="header__sort-item">
+            <a href="" class="header__sort-link">Bán chạy</a>
+          </li>
+          <li class="header__sort-item">
+            <a href="" class="header__sort-link">Giá</a>
+          </li>
+        </ul>
       </header>
       <!-- End: Header -->
 
