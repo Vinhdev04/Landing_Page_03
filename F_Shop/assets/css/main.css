@@ -1,4 +1,7 @@
 /*======================== Header navbar ======================== */
+.app {
+  overflow: hidden;
+}
 .header {
   height: var(--header-height);
   background-image: linear-gradient(0, #fe6433, #f53e2d);
@@ -1460,6 +1463,7 @@ i.home-product-item__like-icon-fill {
 .home-product__pagination {
   margin-top: 48px;
   margin-bottom: 32px;
+  padding-left: 0;
 }
 
 /*======================== Footer ======================== */
