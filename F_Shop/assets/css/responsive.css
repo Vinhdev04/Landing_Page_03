@@ -3,10 +3,12 @@
   .hide-on-mobile-tablet {
     display: none;
   }
+
   :root {
     --header-height: 70px;
     --navbar-height: 0px;
   }
+
   .header {
     position: fixed;
     /* width: 100%; */
@@ -15,6 +17,7 @@
     left: 0;
     z-index: 10;
   }
+
   .header__cart-list {
     position: fixed;
     top: var(--header-height);
@@ -22,14 +25,21 @@
     width: 100%;
     padding: 0px calc((100% - 644px) / 2);
   }
+
   .header__cart-list::after {
     display: none;
   }
+
   .app__container {
     margin-top: calc(var(--header-height) + var(--header-sort-bar-height));
   }
+
   .header__sort-bar {
     display: flex;
+  }
+
+  .app__content {
+    padding-top: 8px;
   }
 }
 /* Tablet */
@@ -37,9 +47,18 @@
   .hide-on-tablet {
     display: none;
   }
+
   .header__cart {
     width: 80px;
     text-align: right;
+  }
+
+  .header__cart-icon {
+    /* khi user select ser ko đổi màu chữ*/
+    user-select: none;
+    -webkit-user-select: none;
+    /* bỏ highlight trên mobile khi user select */
+    -webkit-tap-highlight-color: transparent;
   }
 }
 /* Moblie */
@@ -47,15 +66,19 @@
   .hide-on-mobile {
     display: none;
   }
+
   .header-with-search {
     justify-content: space-between;
   }
+
   .header__logo {
     width: unset;
   }
+
   .header__cart {
     width: unset;
   }
+
   .header__search {
     position: fixed;
     top: var(--header-height);
@@ -69,6 +92,7 @@
     animation: mobileSearchSideIn linear 0.3s;
     display: none;
   }
+
   @keyframes mobileSearchSideIn {
     from {
       opacity: 0;
@@ -79,6 +103,7 @@
       top: var(--header-height);
     }
   }
+
   .header__search-history {
     position: fixed;
     width: 100%;
@@ -86,14 +111,17 @@
     left: 0;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
   }
+
   .pagination-item {
     margin: 0;
   }
+
   .pagination-item__link {
     height: 28px;
     font-size: 1.6rem;
     min-width: 36px;
   }
+
   .app__content {
     margin: 0 4px;
   }

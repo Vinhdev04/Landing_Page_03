@@ -141,6 +141,7 @@ i.fa-regular.fa-circle-question {
 }
 .header__sort-link--active .header__sort-link {
   color: var(--primary-color);
+  border-bottom: 1px solid rgba(255, 0, 0, 0.914);
 }
 .header__sort-item:first-child .header__sort-link::before {
   display: none;
@@ -865,8 +866,8 @@ i.fa-regular.fa-circle-question {
   display: inline-block;
   padding: 0 12px;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
-
 .header__cart-list::after {
   content: " ";
   display: block;
@@ -1160,6 +1161,62 @@ i.fa-regular.fa-circle-question {
   color: var(--primary-color);
 }
 
+/*======================== Responsive Mobile Category ======================== */
+.mobile-category {
+  
+}
+
+.mobile-category__list {
+  display: flex;
+  max-width: 100%;
+  overflow-x: auto;
+  list-style: none;
+  padding-left: 0;
+}
+
+.mobile-category__list::-webkit-scrollbar {
+  display: none;
+}
+
+.mobile-category__item {
+  flex-shrink: 0;
+  margin-right: 10px;
+}
+
+.mobile-category__item:nth-of-type(3n + 1) .mobile-category__link {
+  background-color: #87afd8;
+}
+
+.mobile-category__item:nth-of-type(3n + 2) .mobile-category__link {
+  background-color: #76c9bd;
+}
+
+.mobile-category__item:nth-of-type(3n + 3) .mobile-category__link {
+  background-color: #88cf81;
+}
+
+.mobile-category__link {
+  display: block;
+  text-decoration: none;
+  color: var(--white-color);
+  --line-height: 2rem;
+  font-size: 1.4rem;
+  line-height: var(--line-height);
+  height: calc(var(--line-height) * 2);
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  text-align: center;
+  width: 110px;
+  border-radius: 5px;
+  font-weight: 300;
+  /* khi user select ser ko đổi màu chữ*/
+  user-select: none;
+  -webkit-user-select: none;
+  /* bỏ highlight trên mobile khi user select */
+  -webkit-tap-highlight-color: transparent;
+}
 /*======================== Home sort and filter  ======================== */
 .home-filter {
   background-color: rgba(0, 0, 0, 0.04);
