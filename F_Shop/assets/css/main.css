@@ -608,8 +608,9 @@ i.fa-regular.fa-circle-question {
   align-items: center;
 }
 
-.header-mobile-search {
+.header__mobile-search {
   padding: 0 12px;
+  display: none;
 }
 
 .header-mobile-search-icon {
@@ -1163,7 +1164,7 @@ i.fa-regular.fa-circle-question {
 
 /*======================== Responsive Mobile Category ======================== */
 .mobile-category {
-  
+  display: none;
 }
 
 .mobile-category__list {
@@ -1216,6 +1217,7 @@ i.fa-regular.fa-circle-question {
   -webkit-user-select: none;
   /* bỏ highlight trên mobile khi user select */
   -webkit-tap-highlight-color: transparent;
+  padding: 0 6px;
 }
 /*======================== Home sort and filter  ======================== */
 .home-filter {

@@ -41,6 +41,9 @@
   .app__content {
     padding-top: 8px;
   }
+  .mobile-category {
+    display: block;
+  }
 }
 /* Tablet */
 @media (min-width: 740px) and (max-width: 1023px) {
@@ -124,5 +127,13 @@
 
   .app__content {
     margin: 0 4px;
+  }
+
+  .header__mobile-search {
+    display: block;
+  }
+
+  .header__logo-img {
+    width: 110px;
   }
 }
