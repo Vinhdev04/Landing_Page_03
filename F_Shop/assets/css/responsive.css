@@ -4,11 +4,6 @@
     display: none;
   }
 
-  :root {
-    --header-height: 70px;
-    --navbar-height: 0px;
-  }
-
   .header {
     position: fixed;
     /* width: 100%; */
@@ -51,6 +46,11 @@
     display: none;
   }
 
+  :root {
+    --header-height: 70px;
+    --navbar-height: 0px;
+  }
+
   .header__cart {
     width: 80px;
     text-align: right;
@@ -68,6 +68,11 @@
 @media (max-width: 739px) {
   .hide-on-mobile {
     display: none;
+  }
+
+  :root {
+    --header-height: 54px;
+    --navbar-height: 0px;
   }
 
   .header-with-search {
@@ -136,7 +141,44 @@
   .header__logo-img {
     width: 110px;
   }
+
   .footer__content {
     padding: 0 16px;
+  }
+
+  .footer__heading {
+    text-align: center;
+  }
+
+  .footer-item__link {
+    justify-content: center;
+  }
+
+  .footer__download-apps {
+    flex: unset;
+  }
+  .footer__download-app-link {
+    display: block;
+    padding: 6px 8px;
+  }
+
+  .footer__download {
+    justify-content: center;
+  }
+
+  .footer-item__link--linkedin {
+    margin-right: 8px;
+  }
+
+  .footer-item__link--gmail {
+    margin-right: 20px;
+  }
+
+  .footer-item__link--github {
+    margin-right: 16px;
+  }
+  .footer-item__link--desc {
+    text-align: start;
+    align-items: start;
   }
 }
