@@ -56,4 +56,13 @@
     transition: 0.5s;
     color: var(--primary-color);
   }
+
+  /* Section 02 */
+  .home .content p.desc {
+    padding: 1.5rem 2rem;
+  }
+
+  .home::before {
+    display: none;
+  }
 }
