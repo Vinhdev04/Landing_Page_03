@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: capitalize;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+*::selection {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+:root {
+  --primary-color: #ff046f;
+  --secondary-color: #c63bfa;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #333;
+  height: 3000px;
+}
+
+header .navbar ul li:first-child {
+  display: inline-block;
+  border-bottom: 2px solid var(--secondary-color);
+  width: 70px;
+}
