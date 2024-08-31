@@ -14,6 +14,7 @@ header {
   transition: 0.5s;
 }
 
+/* Hiệu ứng zoom navbar khi scroll body bằng jQuery */
 .header-active {
   top: 0;
   width: 100%;
@@ -206,4 +207,72 @@ header .menu-mobile .icon-close {
   width: 120%;
   border-radius: 50%;
   z-index: -1;
+}
+
+/* Section 03 */
+.heading {
+  font-size: 3rem;
+  color: var(--primary-color);
+  padding: 5rem 1rem 0;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+}
+
+.about h3.title {
+  padding: 0 1rem;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 400;
+  color: #aaa;
+}
+
+.about .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.about-image img {
+  height: 70vh;
+  width: 50vw;
+}
+.wrapper .content {
+  padding-left: 5rem;
+}
+
+.wrapper .content h3 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.wrapper .content p {
+  font-size: 1.6rem;
+  color: #999;
+  padding: 1rem 0;
+}
+
+.wrapper .content button {
+  height: 3.5rem;
+  width: 17rem;
+  background: var(--secondary-color);
+  color: #fff;
+  font-size: 2rem;
+  border: none;
+  border-radius: 5rem;
+  transition: 0.2s;
+  box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+.about .content button:hover {
+  letter-spacing: 0.2rem;
+  background: transparent;
+  border: 2px solid dodgerblue;
+  color: var(--secondary-color);
+}
+
+.about .content button:active {
+  border: 2px solid red;
 }
