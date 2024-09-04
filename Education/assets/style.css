@@ -276,3 +276,101 @@ header .menu-mobile .icon-close {
 .about .content button:active {
   border: 2px solid red;
 }
+
+/* Section 04 */
+.teacher h3.title {
+  padding: 0 1rem;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 400;
+  color: #aaa;
+  margin: 0 0 5rem;
+}
+
+.teacher .card-container img {
+  height: 70vh;
+  width: 50vw;
+}
+/* 
+.teacher .card-container img {
+  width: 100%;
+  height: 100%;
+} */
+
+.teacher {
+  background-color: #f9f9f9;
+}
+
+.teacher .card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+}
+
+.teacher .card-container .card {
+  padding: 2rem;
+  margin: 2rem;
+  background: #fff;
+  text-align: center;
+  width: 28rem;
+  box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.teacher .card-container .card:active {
+  border: 2px solid gold;
+  cursor: pointer;
+}
+
+.teacher .card-container .card:hover {
+  border: 2px solid blue;
+  cursor: pointer;
+  transform: translateY(-10px);
+}
+
+.teacher .card-container .card img {
+  width: 100%;
+  height: 30rem;
+  object-fit: cover;
+  object-position: center;
+  filter: grayscale();
+  transition: 0.5s;
+}
+
+.teacher .card-container .card:hover img {
+  filter: grayscale(0);
+  cursor: pointer;
+}
+
+.teacher .card-container .card h3 {
+  font-size: 2rem;
+  color: var(--secondary-color);
+  padding: 0.6rem 0;
+}
+
+.teacher .card-container .card p {
+  font-size: 1.6rem;
+  color: #666;
+}
+
+.teacher .card-container .card .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.teacher .card-container .card .icon i {
+  font-size: 1.8rem;
+  color: var(--secondary-color);
+  padding: 1.2rem 0.8rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.teacher .card-container .card .icon i:hover {
+  color: var(--primary-color);
+}

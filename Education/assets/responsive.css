@@ -80,6 +80,46 @@
   .wrapper .content button {
     display: block;
     margin-top: 2rem;
+    margin: 0 auto 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* .teacher .card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    width: calc(98% - 3rem);
+    gap: 3rem;
+  } */
+
+  /* .teacher .card-container .card {
+    width: 35rem;
+  } */
+
+  .home .box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    width: calc(90% - 3rem);
+
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .home .box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    width: calc(90% - 3rem);
+    /* gap: 3rem; */
     margin: 0 auto;
   }
 }
