@@ -422,3 +422,93 @@ header .menu-mobile .icon-close {
   color: #999;
   padding: 1rem 0;
 }
+
+/* Section 06 */
+.review {
+  background: #f9f9f9;
+}
+
+.review .box-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.review .box-container .box {
+  width: 28rem;
+  padding-top: 1rem;
+  text-align: center;
+  box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  margin: 5rem 2rem;
+  border-radius: 10px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.review .box-container .box:hover {
+  transform: translateY(-20px);
+  border: 2px solid var(--secondary-color);
+}
+
+.review .box-container .box:hover h3 {
+  color: var(--primary-color);
+}
+
+.review .box-container .box:active {
+  border: 2px solid var(--primary-color);
+}
+
+.review .box-container .box img {
+  width: 8.5rem;
+  height: 8.5rem;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  margin-top: -4rem;
+  border: 0.6rem solid var(--primary-color);
+  border-left: 0.6rem solid var(--secondary-color);
+  border-bottom: 0.6rem solid var(--secondary-color);
+}
+
+.review .box-container .box h3 {
+  margin: 1.2rem 0 1.2rem;
+  color: var(--primary-color);
+  font-weight: bold;
+  text-align: center;
+  font-size: 2rem;
+  padding: 0 0.5rem;
+}
+
+.review .box-container .box p {
+  font-size: 1.4rem;
+  color: #aaa;
+  padding: 0 1.3rem;
+}
+
+.review .box-container .box .icons {
+  display: flex;
+  /* gap: 2rem; */
+  align-items: center;
+  justify-content: center;
+}
+
+.review .box-container .box .icons i {
+  font-size: 1.6rem;
+  padding: 1.3rem 1.5rem;
+  color: var(--secondary-color);
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.5s;
+  text-align: center;
+}
+
+.review .box-container .box .icons i:hover {
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+.review .box-container .box .icons i:active {
+  color: gold;
+  background: transparent;
+}
