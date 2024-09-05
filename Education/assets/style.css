@@ -576,3 +576,44 @@ textarea:focus {
   color: var(--secondary-color);
   border: 0.2rem solid var(--primary-color);
 }
+
+/* Footer */
+.footer {
+  text-align: center;
+}
+
+.footer .social-media {
+  padding: 3rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .social-media a {
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4.3rem;
+  text-align: center;
+  border-radius: 50%;
+  color: var(--secondary-color);
+  border: 2px solid var(--secondary-color);
+  font-size: 2rem;
+  transition: 0.2s linear;
+  margin: 0 0.1rem;
+  margin: 0.4rem;
+}
+
+.footer .social-media a:hover {
+  color: #fff;
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.footer p {
+  font-size: 1.4rem;
+}
+
+.footer p a {
+  color: var(--primary-color);
+  font-weight: bold;
+}
