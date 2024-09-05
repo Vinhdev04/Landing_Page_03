@@ -67,7 +67,21 @@
   }
 
   .course .box-containe {
-    width: 100px;
+    width: 100%;
+  }
+
+  .contact .rows {
+    flex-flow: column;
+  }
+
+  .contact .rows .image img {
+    width: 90vw;
+    height: 50vh;
+  }
+
+  .contact .rows .form-contact {
+    width: 90%;
+    padding: 0;
   }
 }
 

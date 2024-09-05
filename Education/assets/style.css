@@ -512,3 +512,67 @@ header .menu-mobile .icon-close {
   color: gold;
   background: transparent;
 }
+
+/* Section 07 */
+.contact {
+  background: #333;
+}
+
+.contact .rows {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0;
+}
+
+.contact .rows .image img {
+  width: 50vw;
+  height: 70vh;
+}
+
+.contact .rows .form-contact {
+  width: 50%;
+  padding-right: 6rem;
+}
+
+.contact .rows .form-contact input,
+textarea {
+  height: 4rem;
+  width: 100%;
+  background: #fff;
+  border: none;
+  border-radius: 5rem;
+  padding: 1rem 0 1rem 1rem;
+  margin: 1rem 0 1rem 1rem;
+  color: var(--primary-color);
+  font-size: 1.8rem;
+  transition: 2s linear;
+}
+
+.contact .rows .form-contact textarea {
+  height: 20rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  resize: none;
+}
+
+.contact .rows .form-contact input:focus,
+textarea:focus {
+  border: 0.2rem solid var(--primary-color);
+}
+
+.contact .rows .form-contact input[type="submit"] {
+  width: 17rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  cursor: pointer;
+  font-size: 2rem;
+  transition: 0.2s;
+  padding: 0.4rem 0.2rem;
+}
+
+.contact .rows .form-contact input[type="submit"]:hover {
+  background: none;
+  color: var(--secondary-color);
+  border: 0.2rem solid var(--primary-color);
+}
